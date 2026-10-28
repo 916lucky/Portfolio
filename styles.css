@@ -1,0 +1,146 @@
+/* Fundo e texto da página */
+body {
+    margin: 0;
+    padding: 40px 20px;
+    background-color: #110f18;
+    color: #f3efff;
+    font-family: JetBrains Mono, monospace;
+}
+
+/* Área que reúne o conteúdo do portfólio */
+.perfil {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Nome e apresentação */
+.perfil > h1 {
+    margin: 0;
+    color: #c084fc;
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+.perfil > p {
+    margin: 4px 0 24px;
+    color: #c084fc;
+    text-align: center;
+    font-size: 0.95rem;
+    letter-spacing: 0.04em;
+}
+
+.perfil > p strong {
+    font-weight: 400;
+}
+
+.perfil > p::after {
+    content: "";
+    display: block;
+    width: 42px;
+    margin: 12px auto 0;
+    border-top: 2px solid #7e22ce;
+    border-radius: 2px;
+}
+
+/* Caixas de seção */
+.sobre-mim,
+.formacao,
+.conhecimentos,
+.contato,
+.projetos {
+    margin-top: 18px;
+    padding: 18px;
+    background-color: #17131f;
+    border: 1px solid #51327f;
+    border-radius: 12px;
+}
+
+/* Títulos das caixas */
+.sobre-mim h2,
+.formacao h2,
+.conhecimentos h2,
+.contato h2,
+.projetos h2 {
+    margin: 0;
+    color: #d8b4fe;
+}
+
+/* Linha entre o título e a descrição */
+hr {
+    margin: 12px 0;
+    border: 0;
+    border-top: 1px solid #68419a;
+}
+
+/* Texto e listas */
+p,
+li {
+    line-height: 1.6;
+}
+
+ul {
+    padding-left: 22px;
+}
+
+li::marker {
+    color: #a855f7;
+}
+
+/* Caixas individuais dos projetos */
+.projeto {
+    margin-top: 14px;
+    padding: 16px;
+    background-color: #211a2d;
+    border: 1px solid #68419a;
+    border-radius: 10px;
+}
+
+.projeto h3 {
+    margin-top: 0;
+    color: #c084fc;
+}
+
+/* Links */
+a {
+    color: #c084fc;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e9d5ff;
+    text-decoration: underline;
+}
+
+/* Estilo dos links de GitHub e LinkedIn */
+.projeto a,
+a.linkedin {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 10px 14px;
+    color: white;
+    background-color: #7e22ce;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.projeto a:hover,
+a.linkedin:hover {
+    color: white;
+    background-color: #9333ea;
+    text-decoration: none;
+}
+
+/* Ajuste para telas pequenas */
+@media (max-width: 600px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    .sobre-mim,
+    .formacao,
+    .conhecimentos,
+    .contato,
+    .projetos {
+        padding: 15px;
+    }
+}   
